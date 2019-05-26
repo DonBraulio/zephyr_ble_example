@@ -21,6 +21,7 @@ export GNUARMEMB_TOOLCHAIN_PATH="/usr/local/gcc-arm-none-eabi-8-2018-q4-major"
 ```
 
 ## Building & Debugging
+
 ### Using Segger JLink
 If you have nrfjprog, JLink debugger and the JLink firmware flashed, you should be able to flash or start a debug session only with this:
 
@@ -29,7 +30,8 @@ west build -b nrf52840_pca10056
 west flash
 west debug
 ```
-
+**Note:** west and zephyr itself are under active development.
+If the `west build` command fails in the instructions, try upgrading the *system requirements* indicated above (mainly `cmake`), or compile directly using CMake and Ninja (instead of the west wrapper) as described in the [step 3 of the guide](https://docs.zephyrproject.org/latest/getting_started/index.html#build-the-application).
 ### Using ARM DAPLink
 If ARM mbed DAPLink firmware is flashed in the DK interface, you need to tell `west` to use `pyocd` debugger:
 ```bash
