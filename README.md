@@ -7,6 +7,7 @@ Example based on `samples/bluetooth/peripheral_hr`, instructions provided for th
 
 - Install nrfjprog (see [Nordic docs](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_nrf5x_cltools%2FUG%2Fcltools%2Fnrf5x_nrfjprogexe.html) )
 - Install ARM GCC compiler (download from [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads))
+- Install other system dependencies like indicated [here](https://docs.zephyrproject.org/latest/getting_started/index.html#set-up-a-development-system)
 - `pip install west`  (Zephyr's build configuration tool)
 - JLink Debugger tool (or `pyocd` if using mbed DAPLink interface firmware)
 - JLink or mbed (DAPLink) interface firmware flashed (see [nRF52840-DK downloads](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-DK/Download#infotabs))
